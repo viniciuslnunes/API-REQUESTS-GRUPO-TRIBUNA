@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWVt9MaOJo7QPahGHICMgVkmQIQDNsPX8&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script src="js/googleMaps.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <style>
+      #map {
+        height: 100%;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <div id="map"></div>
+  </body>
+</html>

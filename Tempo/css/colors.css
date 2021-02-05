@@ -1,0 +1,97 @@
+.bc-blueLight{
+    background-color: #E0EAFC;
+}
+
+.bc-white{
+    background-color: #ffffff;
+}
+
+.bc-caroussel{
+    background-color: #333333;
+}
+
+.bc-caroussel-buttons{
+    background-color: #797979;
+
+}
+
+.c-Blue{
+    color: #6298F9;
+}
+
+.c-White{
+    color:white;
+}
+
+.c-White-title{
+    color:white;
+    opacity: .8;
+}
+
+.c-White-description{
+    color:white;
+    opacity: .6;
+}
+
+.c-lightGray{
+    color: rgb(172, 172, 172);
+}
+
+.c-blueTitle{
+    color: #4485AF;
+}
+
+.c-redTitle{
+    color: #A95858;
+}
+
+.c-redStrongTitle{
+    color: #D93857;
+}
+
+.c-greyBlue{
+    color: #7B88A8;
+}
+
+.c-greyBlueBg{
+    background-color: #7B88A8;
+}
+
+.c-greyContent{
+    color: #797979;
+}
+
+.c-blackTitle{
+    color: #444444;
+}
+
+.c-greenTitle{
+    color: #00A368;
+}
+
+.c-yellowSection{
+    color:#E7D263;
+}
+
+.c-greyTeams{
+    color:#C4C4C4;
+}
+.c-greyFooter{
+color: #9D9D9D
+}
+
+.c-greyColumnist{
+    background-color: rgba(196,196,196, 0.1);
+}
+
+.c-greyAppSide{
+    background-color:#DBDBDB;
+}
+
+.c-greyCarsLabel{
+    background-color:#8D98B2;
+}
+
+.c-linearGreyApp{
+background: linear-gradient(180deg, #DBDBDB 0%, #F9F8F8 100%);
+}

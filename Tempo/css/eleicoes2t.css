@@ -1,0 +1,691 @@
+html{
+    --bg:#fff;
+    --bg-panel: #fff;
+    --color-header: black;
+    --color-headings: black;
+    --color-text: black;
+    --color-cidadedata: black;
+    --color-toppref: #efefef; 
+    --color-nomepref:black;
+    --color-porcentpref: black;
+    --color-outrospref: black; 
+    --color-bottomdata: black; 
+    --color-srcver: #efefef;
+    --color-vercand: black;
+    --color-porcentver: black;
+    --color-nav: black;
+    --color-icons: black;
+    --color-navbar: black;     
+}
+     
+     .check-switch input[type="checkbox"] {
+	 position: absolute;
+	 opacity: 0;
+}
+    
+ label.check-switch {
+	 clear: both;
+	 color: #999;
+	 display: flex;
+	 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* Default Track */
+ .check-switch input[type="checkbox"] + .track {
+	 vertical-align: middle;
+	 width: 1.6588em;
+	 border: 1px solid rgba(0, 0, 0, .25);
+	 border-radius: 999px;
+	 background-color: #333333;
+	 -webkit-transition-duration: 0.3s;
+	 -webkit-transition-property: background-color, box-shadow;
+	 box-shadow: inset 0 0 0 0px rgba(102, 5, 199, 0.75);
+	 margin: 2.5px 0 3px 4px;
+	 cursor: pointer;
+}
+/* Default Track Checked */
+ .check-switch input[type="checkbox"]:checked + div {
+	 background-color: var(--color-icons);
+	 border: 1px solid rgba(102, 5, 199, 0.85);
+	 box-shadow: inset 0 0 0 0.5em rgba(179, 106, 251, 0);
+}
+/* Default Knob */
+ .check-switch input[type="checkbox"] + div > div {
+	 left: 0;
+	 width: 0.95em;
+	 height: 0.95em;
+	 border-radius: inherit;
+	 background: #fff;
+	 -webkit-transition-timing-function: cubic-bezier(0.54, 1.85, 0.5, 1);
+	 -webkit-transition-duration: 0.3s;
+	 -webkit-transition-property: transform, background-color, box-shadow;
+	 -moz-transition-timing-function: cubic-bezier(0.54, 1.85, 0.5, 1);
+	 -moz-transition-duration: 0.3s;
+	 -moz-transition-property: transform, background-color;
+	 box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(0, 0, 0, 0.2);
+	 margin-top: 0;
+}
+/* Default Knob Checked */
+ .check-switch input[type="checkbox"]:checked + div > div {
+	 left: 0.699em;
+	 background-color: #fff;
+	 box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(89, 4, 174, 0.5);
+}
+/* Fixes drag performance */
+ .check-switch .knob.is-dragging {
+	 -webkit-transition: none;
+}
+ .tse2020 .cidade .prog-city select option {
+    color: var(--color-nav);
+    background: var(--bg);  
+}
+      
+ body {
+    background-color: var(--bg);
+}
+  .at-pagelayout{
+    background-color: var(--bg-panel);
+}
+ nav.navbar-header main{
+      color: var(--color-nav); 	  
+}  
+ nav.navbar-header main div.menu-temp div.redes a {
+      color: var(--color-icons);
+}
+ div#menuHorizontal div.mainMenuDeps p.item{
+      color: var(--color-navbar);
+}
+ div#menuHorizontal div.mainMenuDeps p.item a{
+      color: var(--color-navbar);     
+}
+ .toggle {
+    align-self: flex-start;
+    color: var(--color-text);
+}
+  nav.navbar-header main div.menu-temp div.menu-previsao .temperature{
+    color: var(--color-nav); 
+  }
+  a#dropdownMenuLink {
+    color: var(--color-nav);
+}
+      
+ .tse2020 {
+	 display: flex;
+	 flex-flow: row wrap;
+	 justify-content: space-between;
+      max-width: 1080px;
+}
+ .tse2020 h1 {
+	 text-align: center;
+	 font-weight: 700;
+	 position: relative;
+	 bottom: 0px;
+	 text-transform: uppercase;
+	 font-size: 18px;
+     color: var(--color-headings);
+}
+ .tse2020 .cidade {
+	 width: 100%;
+	 margin-bottom: 30px;
+	 display: flex;
+	 justify-content: space-around;
+}
+ .tse2020 .cidade .prog {
+     color: var(--color-header); 
+	 display: flex;
+	 flex-flow: row wrap;
+	 width: 80%;
+	 align-items: center;
+	 justify-content: space-between;
+     margin-right:45px;
+}
+ .tse2020 .cidade .prog-city select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	font-size: 27px;
+	font-weight: 900;
+	background-image: url(/image/contentid/policy:1.119135:1600452555/down-arrow1.png);
+	background-color: transparent;
+	background-size: 10%;
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: center;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 5px 25px 5px 5px;
+	width
+}
+ .tse2020 .cidade .prog-city select option {
+	 font-size: 17px;
+}
+ .tse2020 .cidade .prog-prog {
+	 display: flex;
+	 flex-flow: column nowrap;
+	 text-align: end;
+	 font-size: 32px;
+	 font-weight: 900;
+}
+ .tse2020 .cidade .prog-prog span {
+	 font-size: 13px;
+	 font-weight: 100;
+	 text-transform: uppercase;
+}
+ .tse2020 .cidade .prog-bar {
+          display:none;
+	 width: 100%;
+	 height: 15px;
+	 border-radius: 999px;
+	 background: linear-gradient(90deg,#090979 0%,#090979 70%,#00d4ff 70%,#00d4ff 100%);
+}
+ .tse2020 .cidade-data {
+     color: var(--color-cidadedata);
+	 display: flex;
+	 flex-flow: column nowrap;
+	 width: 15%;
+	 justify-content: space-around;
+}
+ .tse2020 .cidade-data-e, .tse2020 .cidade-data-v, .tse2020 .cidade-data-a {
+	 display: flex;
+	 flex-flow: column nowrap;
+	 font-size: 13px;
+	 margin-left: 25px;
+}
+ .tse2020 .cidade-data-e h6, .tse2020 .cidade-data-v h6, .tse2020 .cidade-data-a h6 {
+	 font-size: 14px;
+	 margin: 0;
+     font-weight: 900 !important;
+}
+ .tse2020 .prefeito {
+	 width: 55%;
+     margin-bottom:30px;
+}
+ .tse2020 .prefeito .top {
+	 display: flex;
+	 flex-flow: row wrap;
+	 margin-bottom: 10px;
+}
+ .tse2020 .prefeito .top1 {
+	 width: 50%;
+	 display: flex;
+	 flex-flow: column nowrap;
+	 background-color: var(--color-toppref);
+	 border-top-left-radius: 10px;
+	 border-bottom-left-radius: 10px;
+}
+ .tse2020 .prefeito .top1-nmft {
+	 display: flex;
+	 height: 70px;
+}
+ .tse2020 .prefeito .top1-nmft .top1-ft {
+
+	 background-position: top;
+	 background-size: 100%;
+	 background-repeat: no-repeat;
+	 width: 115px;
+	 height: 115px;
+	 border-radius: 100%;
+     border: 4px solid gray;
+	 position: relative;
+	 top: -60px;
+	 left: 10px;
+	 order: 1;
+}
+ .tse2020 .prefeito .top1-nmft .top1-nm {
+	 width: 147px;
+     color: var(--color-nomepref);
+	 font-size: 18px;
+	 font-weight: 900;
+	 padding: 5px 5px 5px 20px;
+	 order: 2;
+}
+ .tse2020 .prefeito .top1-flag {
+	 position: relative;
+	 top: 110px;
+	 left: 25px;
+	 background-color: green;
+	 width: 65px;
+	 padding: 5px;
+	 border-radius: 999px;
+	 text-transform: uppercase;
+	 font-size: 11px;
+	 text-align: center;
+	 color: #fff;
+}
+ .tse2020 .prefeito .top1-par {
+	 font-size: 16px;
+	 padding: 5px 0px;
+	 color: orange;
+	 font-weight: 900;
+	 position: relative;
+	 top: -15px;
+	 width: 130px;
+	 left: 135px;
+}
+ .tse2020 .prefeito .top1-vtp, .tse2020 .prefeito .top1-vtd {
+	 align-self: center;
+	 padding: 5px;
+     color: var(--color-percentpref);
+}
+ .tse2020 .prefeito .top1-vtp {
+	 font-size: 33px;
+	 font-weight: 900;
+}
+ .tse2020 .prefeito .top1-vtp span {
+	 font-size: 20px;
+}
+ .tse2020 .prefeito .top1-vtd {
+	 padding-top: 0 !important;
+	 font-size: 14px;
+}
+ .tse2020 .prefeito .top2 {
+	 width: 50%;
+	 display: flex;
+	 flex-flow: column nowrap;
+	 background-color: var(--color-toppref);
+	 border-top-right-radius: 10px;
+	 border-bottom-right-radius: 10px;
+}
+ .tse2020 .prefeito .top2-nmft {
+	 display: flex;
+	 justify-content: flex-end;
+	 height: 70px;
+}
+ .tse2020 .prefeito .top2-nmft .top2-ft {
+    
+	 background-position: top;
+	 background-size: 100%;
+	 background-repeat: no-repeat;
+	 width: 115px;
+	 height: 115px;
+	 border-radius: 100%;
+     border: 4px solid gray;
+	 position: relative;
+	 top: -60px;
+	 left: -10px;
+}
+ .tse2020 .prefeito .top2-nmft .top2-nm {
+	 width: 150px;
+     color: var(--color-nomepref); 
+	 font-size: 18px;
+	 font-weight: 900;
+	 text-align: end;
+	 padding: 5px 20px 5px 10px;
+}
+ .tse2020 .prefeito .top2-flag {
+	 position: relative;
+	 top: 110px;
+	 left: 25px;
+	 background-color: green;
+	 width: 65px;
+	 padding: 5px;
+	 border-radius: 999px;
+	 text-transform: uppercase;
+	 font-size: 11px;
+	 text-align: center;
+	 color: #fff;
+}
+ .tse2020 .prefeito .top2-par {
+	 font-size: 16px;
+	 text-align: right;
+	 padding: 5px 0px;
+	 color: orange;
+	 font-weight: 900;
+	 position: relative;
+	 align-self: flex-end;
+	 top: -15px;
+	 width: 130px;
+	 right: 135px;
+}
+ .tse2020 .prefeito .top2-vtp, .tse2020 .prefeito .top2-vtd {
+	 text-align: end;
+	 align-self: center;
+	 padding: 5px;
+}
+ .tse2020 .prefeito .top2-vtp {
+	 font-size: 33px;
+	 font-weight: 900;
+     color: var(--color-percentpref); 
+}
+ .tse2020 .prefeito .top2-vtp span {
+	 font-size: 20px;
+}
+ .tse2020 .prefeito .top2-vtd {
+	 padding-top: 0 !important;
+	 font-size: 14px;
+     color: var(--color-percentpref);
+}
+ .tse2020 .prefeito .bottom {
+     display: none;
+	 background: transparent;
+	 border-radius: 10px;
+	 padding: 5px;
+	 max-height: 225px;
+	 overflow-y: auto;
+}
+ .tse2020 .prefeito .bottom-cand {
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 padding: 5px;
+	 border-bottom: 1px solid #efefef;
+     color: var(--color-outrospref);
+}
+ .tse2020 .prefeito .bottom-cand :nth-child(1) {
+	 flex-basis: 35%;
+     font-weight: 900;
+}
+ .tse2020 .prefeito .bottom-cand :nth-child(3) {
+	 flex-basis: 25%;
+     font-weight: 900;
+     order: 2;
+     text-align: right;
+     padding-right: 15px;
+      
+}
+ .tse2020 .prefeito .bottom-cand :nth-child(4) {
+	 flex-basis: 30%;
+      text-align: right;
+}
+ .tse2020 .prefeito .bottom-cand span {
+	 flex-basis: 15%;
+}
+ .tse2020 .prefeito .bottom-data {
+	 display: flex;
+	 flex-flow: row nowrap;
+	 justify-content: space-between;
+	 margin: 15px 0px 20px 0px;
+     color: var(--color-bottomdata);
+     
+}
+ .tse2020 .prefeito .bottom-data-b, .tse2020 .prefeito .bottom-data-n, .tse2020 .prefeito .bottom-data-v {
+	 display: flex;
+	 flex-flow: row wrap;
+	 font-size: 13px;
+      width: 120px;
+}
+ .tse2020 .prefeito .bottom-data-bp, .tse2020 .prefeito .bottom-data-np, .tse2020 .prefeito .bottom-data-vp {
+     font-weight: 900;
+}
+ .tse2020 .prefeito .bottom-data-bd, .tse2020 .prefeito .bottom-data-nd, .tse2020 .prefeito .bottom-data-vd {
+      margin-left: 10px;
+}
+ .tse2020 .prefeito .bottom-data-b{
+     margin-left: 10px;
+}
+ .tse2020 .prefeito .bottom-data-b h6, .tse2020 .prefeito .bottom-data-n h6, .tse2020 .prefeito .bottom-data-v h6 {
+	 font-size: 15px;
+	 margin: 0;
+      flex-basis: 100%;
+      text-transform: uppercase;
+}
+ .tse2020 .vereador {
+	 width: 42%;
+    margin-bottom:30px;
+    margin-top: 48px;
+}
+ .tse2020 .vereador .ver {
+	 background: transparent;
+	 border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+	 max-height: 195px;
+     padding: 5px;
+	 overflow-y: auto;
+}
+ .tse2020 .vereador .ver-src {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 top: 0;
+	 height: 40px;
+	 background-color: var(--color-toppref);
+	 width: 100%;
+	 border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     text-transform: uppercase;
+     font-weight: 900;
+     color: var(--color-vercand);
+}
+ .tse2020 .vereador .ver-src input {
+     display: none;
+	 border-radius: 5px;
+	 border: none;
+	 height: 20px;
+	 padding-left: 5px;
+	 margin-right: 5px;
+	 color: grey;
+	 width: 70%;
+}
+ .tse2020 .vereador .ver-src button {
+     display: none;
+	 border-radius: 100%;
+	 border: none;
+	 height: 25px;
+	 width: 25px;
+}
+ .tse2020 .vereador .ver-tit {
+	 background-color: #efefef;
+}
+ .tse2020 .vereador .ver-cand {
+	 display: flex;
+	 justify-content: space-between;
+	 align-content: center;
+	 padding: 5px;
+     color: var(--color-vercand);
+	 border-bottom: 1px solid #efefef;
+}
+
+ .tse2020 .vereador .ver-cand :nth-child(1) {
+	 flex-basis: 30%;
+         font-weight: 900;
+}
+     .tse2020 .vereador .ver-cand :nth-child(3) {
+	order: 1;
+	font-weight: 900;
+	flex-basis: 14%;
+}
+ .tse2020 .vereador .ver-cand :nth-child(4) {
+	 flex-basis: 10%;
+}
+ .tse2020 .vereador .ver-cand span {
+	 flex-basis: 26%;
+}
+ .tse2020 .vereador .ver-cand .flag {
+	 flex-basis: 6%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 background-color: green;
+	 padding-top: 1px;
+	 border-radius: 100%;
+	 width: 23px;
+	 height: 23px;
+     font-size: 10px;
+	 text-align: center;
+	 color: #fff;
+     order: 2;
+}
+ .tse2020 .vereador .ver-data {
+	 display: none;
+	 flex-flow: row nowrap;
+	 justify-content: space-between;
+	 margin: 15px 0 20px 0px;
+     color: var(--color-bottomdata);
+     
+}
+ .tse2020 .vereador .ver-data-b, .tse2020 .vereador .ver-data-n, .tse2020 .vereador .ver-data-v {
+	 display: flex;
+	 flex-flow: row wrap;
+     font-size: 13px;
+     width: 120px;
+}
+ .tse2020 .vereador .ver-data-bp, .tse2020 .vereador .ver-data-np, .tse2020 .vereador .ver-data-vp {
+     font-weight: 900;
+}
+ .tse2020 .vereador .ver-data-bd, .tse2020 .vereador .ver-data-nd, .tse2020 .vereador .ver-data-vd {
+     margin-left: 10px;
+}
+
+ .tse2020 .vereador .ver-data-b{
+     margin-left: 10px;
+}
+ .tse2020 .vereador .ver-data-b h6, .tse2020 .vereador .ver-data-n h6, .tse2020 .vereador .ver-data-v h6 {
+	 font-size: 15px;
+	 margin: 0;
+     flex-basis: 100%;
+     text-transform: uppercase;
+}
+ .tse2020 ::-webkit-scrollbar {
+    width: 5px;
+}
+ .tse2020 ::-webkit-scrollbar-track-piece {
+    background-color: #EEE;
+}
+ .tse2020 ::-webkit-scrollbar-thumb:vertical,
+ .tse2020 ::-webkit-scrollbar-thumb:horizontal {
+    background-color: #BAC0C4
+}
+ .tse2020 ::-webkit-scrollbar-thumb:vertical:hover,
+ .tse2020 ::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #717171
+}
+ @media screen and (max-width: 1150px) {
+	 .tse2020 {
+		 flex-flow: column nowrap;
+		 align-items: center;
+	}
+	 .tse2020 .prefeito {
+		 width: 100%;
+	}
+	 .tse2020 .vereador {
+		 width: 100%;
+		 margin-top: 20px;
+	}
+         .tse2020 .vereador .ver-cand .flag {
+         flex-basis: 4%;
+        }
+	.tse2020 .prefeito .top1-nmft .top1-ft,
+	.tse2020 .prefeito .top2-nmft .top2-ft{
+	width: 115px;
+	}
+}
+ @media screen and (max-width: 750px) {
+	 .tse2020 .prefeito .top {
+		 flex-flow: column;
+	}
+	 .tse2020 .prefeito .top1, .tse2020 .prefeito .top2 {
+		 width: auto;
+		 border-radius: 10px;
+	}
+	 .tse2020 .prefeito .top2 {
+		 margin-top: 10px;
+	}
+    .tse2020 .vereador .ver-cand .flag {
+         flex-basis: 5%;
+    }
+      label.check-switch {
+      margin-left:20px;
+    }
+}
+ @media screen and (max-width: 550px) {
+    label.check-switch {
+      margin: 0 0 20px 20px;
+    }
+	 .tse2020 .cidade .prog {
+		 flex-flow: column nowrap;
+		 width: 80%;
+		 align-items: flex-start;
+	}
+	 .tse2020 .cidade .prog-prog {
+		 margin-top: 20px;
+		 margin-left: 10px;
+	}
+	 .tse2020 .cidade-data-e, .tse2020 .cidade-data-v, .tse2020 .cidade-data-a {
+		 margin: 0;
+	}
+	 .tse2020 .prefeito .bottom-cand {
+		 flex-flow: row nowrap;
+		 height: 50px;
+         justify-content: space-between;
+	}
+	 .tse2020 .prefeito .bottom-cand :nth-child(1n) {
+		 font-weight: 100;
+	}
+	 .tse2020 .prefeito .bottom-cand :nth-child(odd) {
+		 font-weight: 900;
+	}
+	 .tse2020 .vereador .ver-cand {
+		 flex-flow: row nowrap;
+		 justify-content: space-between;
+		 height: 50px;
+		 align-items: center;
+	}
+     .tse2020 .vereador .ver-cand .flag {
+              flex-basis: 6%;
+    }
+     .tse2020 .vereador .ver-cand :nth-child(1n) {
+		 font-weight: 100;
+	}
+	 .tse2020 .vereador .ver-cand :nth-child(odd) {
+		 font-weight: 900;
+	}
+	 .tse2020 .vereador .ver-cand .flag {
+		 flex-basis: auto;
+		 align-self: flex-end;
+	}
+     .tse2020 .vereador {
+		 width: 95%;
+    }
+     .tse2020 .prefeito {
+		 width: 95%;
+    	 max-width:100vw;
+    }
+	 .tse2020 .cidade .prog-citys {
+		 min-width: 165px;
+	}
+	 .tse2020 .cidade .prog-bar {
+		 width: 95%;
+	}
+	 .tse2020 .cidade-data {
+		 width: 21%;
+	}
+	 .tse2020 .prefeito h1 {
+		 text-align: right;
+		 margin-right: 50px;
+	}
+	 .tse2020 .prefeito .top1-nmft .top1-nm {
+		 width: 200px;
+		 font-size: 19px;
+	}
+	 .tse2020 .prefeito .top1-vtp, .tse2020 .prefeito .top1-vtd {
+		 align-self: flex-start;
+		 margin-left: 30px;
+	}
+	 .tse2020 .prefeito .top2-nmft .top2-nm {
+		 width: 200px;
+		 font-size: 19px;
+	}
+	 .tse2020 .prefeito .top2-vtp, .tse2020 .prefeito .top2-vtd {
+		 align-self: flex-end;
+		 margin-right: 30px;
+	}
+    .tse2020 .cidade {
+         width: 95%;
+    }
+    .tse2020 .cidade .prog-city select{
+     /*min-width: 245px;
+         font-size: 24px;
+         */
+    min-width: auto !important;
+    font-size: 14px;
+    }
+  
+    .tse2020 .cidade .prog{
+         width: 75%;
+    }
+    .tse2020 .cidade-data {
+         width: 17%;
+    }
+    .tse2020 .prefeito .bottom-cand :nth-child(1) {
+    flex-basis: 40%;
+    }
+}

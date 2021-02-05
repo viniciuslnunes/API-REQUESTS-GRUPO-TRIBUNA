@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/darkMode.js"></script>
+    <script src="js/eleicao.js"></script>
+    <script src="js/eleicaoVereador.js"></script>
+    <script src="js/eleicaoPrefeito.js"></script>
+    <link rel="stylesheet" href="css/eleicoes1t.css">
+    <stylesheet ></stylesheet>
+    <title>Eleições</title>
+  </head>
+  <body>
+    <main class="tse2020">
+      <div class="toogle" style="font-size: 1.25em; align-self: flex-start">
+        <label class="check-switch"
+          >Modo noturno<input type="checkbox" name="theme" />
+          <div class="track"><div class="knob"></div></div
+        ></label>
+      </div>
+      <section class="cidade">
+        <div class="prog">
+          <div class="prog-city">
+            <select
+              class="prog-citys"
+              id="cidade-select"
+              onchange="redirecionar(this)"
+            >
+              <option value="cidade.O.2.71218">São Vicente</option>
+              <option value="cidade.O.2.69213">Praia Grande</option>
+              <!--            <option value="cidade.O.69213">Praia Grande</option>
+                    <option value="cidade.O.71218">São Vicente</option>
+		-->
+            </select>
+          </div>
+          <div class="prog-prog" id="cidade-prog">
+            100,00%
+            <span>Urnas apuradas</span>
+          </div>
+          <div class="prog-bar" id="cidade-bar"></div>
+        </div>
+        <div class="cidade-data">
+          <div class="cidade-data-e">
+            <h6>Eleitores</h6>
+            <div class="cidade-data-ee" id="cidade-eleitores"></div>
+          </div>
+          <div class="cidade-data-v">
+            <h6>Votantes</h6>
+            <div class="cidade-data-vv" id="cidade-votantes"></div>
+          </div>
+          <div class="cidade-data-a">
+            <h6>Ausentes</h6>
+            <div class="cidade-data-aa" id="cidade-ausentes"></div>
+          </div>
+        </div>
+      </section>
+      <section class="prefeito">
+        <h1>Prefeito</h1>
+        <div class="top">
+          <div class="top1">
+            <div class="top1-nmft">
+              <span class="top1-nm" id="top1-nm"></span>
+              <div class="top1-ft" id="top1-ft">
+                <div class="top1-flag" id="top1-flag"></div>
+              </div>
+            </div>
+
+            <div class="top1-par" id="top1-par"></div>
+            <div class="top1-vtp" id="top1-vp"></div>
+            <div class="top1-vtd" id="top1-vd"></div>
+          </div>
+          <div class="top2">
+            <div class="top2-nmft">
+              <span class="top2-nm" id="top2-nm"></span>
+              <div class="top2-ft" id="top2-ft">
+                <div class="top2-flag" id="top2-flag"></div>
+              </div>
+            </div>
+            <div class="top2-par" id="top2-par"></div>
+            <div class="top2-vtp" id="top2-vp"></div>
+            <div class="top2-vtd" id="top2-vd"></div>
+          </div>
+        </div>
+        <div class="bottom" id="bottom"></div>
+        <div class="bottom-data">
+          <div class="bottom-data-b" id="dataPre-b">
+            <h6>Brancos</h6>
+          </div>
+          <div class="bottom-data-n" id="dataPre-n">
+            <h6>Nulos</h6>
+          </div>
+          <div class="bottom-data-v" id="dataPre-v">
+            <h6>Válidos</h6>
+          </div>
+        </div>
+      </section>
+      <section class="vereador">
+        <div class="ver-src">
+          Vereadores eleitos no primeiro turno
+          <input
+            id="src-ver"
+            class="pesquisa"
+            type="text"
+            value="Pesquisar candidato"
+            onchange="filterVereador(this.value)"
+            onfocus="this.value=''"
+          />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="ver" id="ver"></div>
+        <div class="ver-data">
+          <div class="ver-data-b" id="dataVer-b">
+            <h6>Brancos</h6>
+          </div>
+          <div class="ver-data-n" id="dataVer-n">
+            <h6>Nulos</h6>
+          </div>
+          <div class="ver-data-v" id="dataVer-v">
+            <h6>Válidos</h6>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-futebol{
+    width: 392px;
+    height: 100%;
+    border: 1px solid white;
+}
+
+.navbar {
+    width: 100%;
+    height: 89px;
+    background: linear-gradient(180deg, #DBDBDB 0%, #F9F8F8 100%);
+}
+
+.navbar .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0 0 16px;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar .top .team-1.img{
+    display: flex;
+    width: 32px;
+    height: 32px;
+}
+
+.navbar .top .team-2.img{
+    display: flex;
+    width: 32px;
+    height: 32px;
+}
+
+.navbar .bottom{
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+    height: 39px;
+}
+
+.navbar .bottom .championship{
+    font-family: Montserrat;
+}
+
+.middle-content{
+    width: 100%;
+    height: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-content .element{
+    display: flex;
+    flex-direction: column;
+    width: 184px;
+    height: 79px;
+    background: linear-gradient(180deg, #F7F7F7 0%, #EDEDED 100%);
+}
+
+.middle-content .element .top{
+    display: flex;
+    padding: 14px 0 0 18px;
+}
+
+.middle-content .element .top .team-1.img{
+    display: flex;
+    width: 32px;
+    height: 32px;
+}
+
+.middle-content .element .top .team-2.img{
+    display: flex;
+    width: 32px;
+    height: 32px;
+}
+
+.middle-content .element .bottom .see-more{
+        font-family: Roboto;
+        text-align: center;
+}
+
+.game-score{
+    width: 100%;
+    height: 189.39px;
+    background: linear-gradient(180deg, #E5E5E5 0%, rgba(239, 239, 239, 0) 100%);
+}
+
+.game-score .header {
+    padding-top: 26px;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.game-score .game-data{
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.game-score .game-data .team-details .team-1.img{
+    display: flex;
+    align-items: center;
+}
+
+.game-live {
+    height: 245px;
+    border: 1px solid red;
+    width: 100%;
+}
+
+.game-score .game-data .score-team-1{
+    display: flex;
+    align-items: center;
+}
+
+.game-score .game-data .score-divisor{
+    display: flex;
+    align-items: center; 
+}
+
+.game-score .game-data .score-team-2{
+    display: flex;
+    align-items: center;
+}
+
+
+.score-team-1{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.score-team-2{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.navbar .top .see-more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .top .see-more a{
+    text-decoration: none;
+}
+
+.navbar .top .see-more .title{
+    font-family: Roboto;
+}
+
+.navbar .top .see-more .subtitle{
+    font-family: Roboto;
+}
+
