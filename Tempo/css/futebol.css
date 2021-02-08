@@ -100,7 +100,7 @@
 
 .game-score{
     width: 100%;
-    height: 189.39px;
+    height: fit-content;
     background: linear-gradient(180deg, #E5E5E5 0%, rgba(239, 239, 239, 0) 100%);
 }
 
@@ -113,34 +113,60 @@
 
 .game-score .game-data{
     display: flex;
+    height: 60px;
     justify-content: center;
     padding-left: 20px;
 }
 
+.game-score .game-data .team-details{
+    font-family: Montserrat;
+
+}
+
 .game-score .game-data .team-details .team-1.img{
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
 }
 
-.game-live {
-    height: 245px;
-    border: 1px solid red;
+.game-score .game-data .team-details .team-1.img img{
     width: 100%;
+    height: 100%;
+}
+
+.game-score .game-data .team-details .team-2.img{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.game-score .game-data .team-details .team-2.img img{
+    width: 100%;
+    height: 100%;
+}
+
+.game-score .game-data .team-details .team-name{
+    padding-top:5px;
 }
 
 .game-score .game-data .score-team-1{
     display: flex;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .game-score .game-data .score-divisor{
     display: flex;
     align-items: center; 
+    padding-bottom: 30px;
 }
 
 .game-score .game-data .score-team-2{
     display: flex;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 
@@ -154,6 +180,47 @@
     font-family: Montserrat;
     font-weight: bold;
     font-style: normal;
+}
+
+.game-live {
+    height: fit-content;
+    width: 100%;
+}
+
+.game-live .game-statistics-container {
+    width: 100%;
+    height: 100%;
+}
+
+.game-live .game-statistics-container .game-statistics {
+    width: 100%;
+    height: fit-content;
+    padding-top: 50px;
+}
+
+.game-live .game-statistics-container .game-statistics .statistics-live{
+    display: flex;
+    flex-direction: row;
+    width: 53%;
+    justify-content: flex-end;
+}
+
+.game-live .game-statistics-container .game-statistics .half-time-game{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.game-live .game-statistics-container .game-statistics .statistics-live.team-2{
+    margin-left: 118px;
+}
+
+.game-live .game-statistics-container .game-statistics .statistics-live .img-play {
+    width: 16px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar .top .see-more{
