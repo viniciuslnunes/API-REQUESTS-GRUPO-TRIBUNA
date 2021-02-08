@@ -203,6 +203,9 @@
     flex-direction: row;
     width: 53%;
     justify-content: flex-end;
+    font-family: Roboto;
+
+    
 }
 
 .game-live .game-statistics-container .game-statistics .half-time-game{
