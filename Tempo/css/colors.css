@@ -49,12 +49,24 @@
     color: #D93857;
 }
 
+.c-redQuotation{
+    color: #BC3636;
+}
+
+.c-redSeeMore{
+color: #CB2323;
+}
+
 .c-greyBlue{
     color: #7B88A8;
 }
 
 .c-greyBlueBg{
     background-color: #7B88A8;
+}
+
+.c-greyTitleQuotation{
+color: #A5A5A5
 }
 
 .c-greyContent{

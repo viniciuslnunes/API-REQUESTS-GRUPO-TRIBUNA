@@ -31,8 +31,7 @@ function main(){
   console.log(moedas)
   //
   Object.keys(moedas).forEach(moeda => {
-      console.log(moedas[moeda].name)
-
+      // console.log(moedas[moeda].name)
       let linha = criaLinha(moedas[moeda]);
       tabela.appendChild(linha);
   });

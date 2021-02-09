@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-app{
+    width: 392px;
+    height: 100%;
+    border: 1px solid white;
+    
+}
+
+.navbar {
+    width: 100%;
+    height: 89px;
+    background: linear-gradient(180deg, #DBDBDB 0%, #F9F8F8 100%);
+
+}
+
+.navbar .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0 0 16px;
+    width: 100%;
+    height: 50px;
+
+}
+
+.navbar .bottom{
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+    height: 39px;
+}
+
+.middle-content{
+    width: 100%;
+    height: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-content .element{
+    display: flex;
+    flex-direction: column;
+    width: 184px;
+    height: 79px;
+    background: linear-gradient(180deg, #F7F7F7 0%, #EDEDED 100%);
+
+}
+
+.middle-content .element .top{
+    display: flex;
+    padding: 14px 0 0 18px;
+    border: 1px solid red;
+
+}
+
+.container-app-bottom{
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(180deg, #E5E5E5 0%, rgba(239, 239, 239, 0) 100%);
+
+}
+
+.container-app-bottom .header {
+    padding-top: 26px;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid red;
+
+}
+
+.container-app-bottom .app-data{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    padding-left: 20px;
+    border: 1px solid red;
+
+}
+
+.app-live {
+    height: fit-content;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.app-live .app-statistics-container {
+    width: 100%;
+    height: 100%;
+}
+
+.app-live .app-statistics-container .app-statistics {
+    width: 100%;
+    height: fit-content;
+    padding-top: 50px;
+    
+}

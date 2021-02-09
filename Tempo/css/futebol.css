@@ -216,7 +216,7 @@
 }
 
 .game-live .game-statistics-container .game-statistics .statistics-live.team-2{
-    margin-left: 118px;
+    margin-left: 123px !important;
 }
 
 .game-live .game-statistics-container .game-statistics .statistics-live .img-play {

@@ -1,24 +1,387 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <script src="js/cotacao.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cotação</title>
-</head>
-<body>
-    <style>
-        td{
-            border: 1px solid red;
-        }
-        table{
-            border: 1px solid black;
-        }
-        tr{
-            border: 1px solid grey; 
-        }
-    </style>
-    <table id="tabela"></table>
-    <script src="js/covid.js"></script>
-</body>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+      <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/app-default.css" />
+        <link rel="stylesheet" href="css/cotacao.css" />
+        <link rel="stylesheet" href="css/tempo.css" />
+        <link rel="stylesheet" href="css/colors.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/margins.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+          rel="stylesheet"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cotação</title>
+      </head>
+      <body>
+        <div class="container">
+          <div class="container-app">
+            <div class="navbar">
+              <div class="navbar-top-container">
+                <div class="quotation-icon">
+                    <img src="img/quotation-icon.svg" alt="">
+                </div>
+                <div class="quotation-container">
+                    <div class="top my-12">
+                        <div class="exchange">
+                            <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                                USD
+                            </div>
+                            <div class="icon-money mx-4">
+                                <img src="img/down-icon.svg" alt="">
+                            </div>
+                            <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                                5,322
+                            </div>
+                        </div>
+                        <div class="exchange">
+                            <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                            Real
+                            </div>
+                            <div class="icon-money mx-4">
+                                <img src="img/down-icon.svg" alt="">
+                            </div>
+                            <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                                5,322
+                            </div>
+                        </div>
+                        <div class="exchange">
+                            <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                            CNY
+                            </div>
+                            <div class="icon-money mx-4">
+                                <img src="img/down-icon.svg" alt="">
+                            </div>
+                            <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                                5,322
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="exchange">
+                            <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                            Euro
+                            </div>
+                            <div class="icon-money mx-4">
+                                <img src="img/down-icon.svg" alt="">                                
+                            </div>
+                            <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                                5,322
+                            </div>
+                        </div>
+                        <div class="exchange">
+                            <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                            ARS
+                            </div>
+                            <div class="icon-money mx-4">
+                                <img src="img/down-icon.svg" alt="">
+                            </div>
+                            <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                                5,322
+                            </div>
+                        </div>
+                        <div class="exchange">
+                            <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                                JPY
+                            </div>
+                            <div class="icon-money mx-4">
+                                <img src="img/down-icon.svg" alt="">
+                            </div>
+                            <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                                5,322
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="middle-content">
+              <div class="element">
+                <div class="quotation-icon">
+                    <img src="img/quotation-icon-2.svg" alt="">
+                </div>
+                <div class="prices-container">
+                <div class="quotation-price-1">
+                    <div class="exchange">
+                        <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                            USD
+                        </div>
+                        <div class="icon-money mx-4">
+                            <img src="img/down-icon.svg" alt="">
+                        </div>
+                        <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                            5,322
+                        </div>
+                    </div>
+                </div>
+                <div class="quotation-price-2">
+                    <div class="exchange">
+                        <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                        Euro
+                        </div>
+                        <div class="icon-money mx-4">
+                            <img src="img/down-icon.svg" alt="">                                
+                        </div>
+                        <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                            5,322
+                        </div>
+                    </div>
+                </div>
+            </div>
+              </div>
+            </div>
+            <div class="container-app-bottom">
+                <div class="navbar my-20">
+                    <div class="navbar-top-container">
+                      <div class="quotation-icon">
+                          <img src="img/quotation-icon.svg" alt="">
+                      </div>
+                      <div class="quotation-container">
+                          <div class="top my-12">
+                              <div class="exchange">
+                                  <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                                      USD
+                                  </div>
+                                  <div class="icon-money mx-4">
+                                      <img src="img/down-icon.svg" alt="">
+                                  </div>
+                                  <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                                      5,322
+                                  </div>
+                              </div>
+                              <div class="exchange">
+                                  <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                                  Real
+                                  </div>
+                                  <div class="icon-money mx-4">
+                                      <img src="img/down-icon.svg" alt="">
+                                  </div>
+                                  <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                                      5,322
+                                  </div>
+                              </div>
+                              <div class="exchange">
+                                  <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                                  CNY
+                                  </div>
+                                  <div class="icon-money mx-4">
+                                      <img src="img/down-icon.svg" alt="">
+                                  </div>
+                                  <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                                      5,322
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="bottom">
+                              <div class="exchange">
+                                  <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                                  Euro
+                                  </div>
+                                  <div class="icon-money mx-4">
+                                      <img src="img/down-icon.svg" alt="">                                
+                                  </div>
+                                  <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                                      5,322
+                                  </div>
+                              </div>
+                              <div class="exchange">
+                                  <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                                  ARS
+                                  </div>
+                                  <div class="icon-money mx-4">
+                                      <img src="img/down-icon.svg" alt="">
+                                  </div>
+                                  <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                                      5,322
+                                  </div>
+                              </div>
+                              <div class="exchange">
+                                  <div class="money mx-4 c-score-time fw-700 fz-14 lh-19">
+                                      JPY
+                                  </div>
+                                  <div class="icon-money mx-4">
+                                      <img src="img/down-icon.svg" alt="">
+                                  </div>
+                                  <div class="price-money c-redQuotation fz-15 fw-400 lh-19">
+                                      5,322
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="container-app-live">
+                  <div class="title-live c-greyTitleQuotation fw-700 fz-14 lh-18 my-32">
+                    COTAÇÕES DE MOEDAS EM TEMPO REAL
+                  </div>
+                  <div class="head-data">
+                      <div class="money-pair fw-400 fz-12 lh-16 c-greyTitleQuotation ">
+                        Pares de Moedas
+                      </div>
+                      <div class="money-purchase fw-400 fz-12 lh-16 c-greyTitleQuotation ">
+                        Compra
+                      </div>
+                      <div class="money-sale fw-400 fz-12 lh-16 c-greyTitleQuotation ">
+                        Venda
+                      </div>
+                      <div class="money-last fw-400 fz-12 lh-16 c-greyTitleQuotation my-11">
+                        Último
+                      </div>
+                  </div>
+                  <div class="divisor">
+                    <img src="img/divisor-cotacao.svg" alt="">
+                </div>
+                <div class="data-live c-greyTitleQuotation">
+                    <div class="data-row">
+                        <div class="icon-data mx-7">
+                            <img src="img/arrow-red.svg" alt="">
+                        </div>
+                        <div class="money-data fz-14 fw-700 lh-18">
+                            EUR/USD
+                        </div>
+                        <div class="money-data-purchase fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-sale fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-last fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                    </div>
+                    <div class="data-row">
+                        <div class="icon-data mx-7">
+                            <img src="img/arrow-green.svg" alt="">
+                        </div>
+                        <div class="money-data fz-14 fw-700 lh-18">
+                        GBP/USD
+                        </div>
+                        <div class="money-data-purchase fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-sale fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-last fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                    </div>
+                    <div class="data-row">
+                        <div class="icon-data mx-7">
+                            <img src="img/arrow-green.svg" alt="">
+                        </div>
+                        <div class="money-data fz-14 fw-700 lh-18">
+                            USD/JPY
+                        </div>
+                        <div class="money-data-purchase fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-sale fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-last fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                    </div>
+                    <div class="data-row">
+                        <div class="icon-data mx-7">
+                            <img src="img/arrow-green.svg" alt="">
+                        </div>
+                        <div class="money-data fz-14 fw-700 lh-18">
+                            USD/CHF
+                        </div>
+                        <div class="money-data-purchase fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-sale fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-last fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                    </div>
+                    <div class="data-row">
+                        <div class="icon-data mx-7">
+                            <img src="img/arrow-red.svg" alt="">
+                        </div>
+                        <div class="money-data fz-14 fw-700 lh-18">
+                            AUD/USD
+                        </div>
+                        <div class="money-data-purchase fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-sale fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-last fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                    </div>
+                    <div class="data-row">
+                        <div class="icon-data mx-7">
+                            <img src="img/arrow-red.svg" alt="">
+                        </div>
+                        <div class="money-data fz-14 lh-18 fw-700">
+                            EUR/GBP
+                        </div>
+                        <div class="money-data-purchase fz-14 lh-18 fw-400">1,1988</div>
+                        <div class="money-data-sale fz-14 lh-18 fw-400">1,1988</div>
+                        <div class="money-data-last fz-14 lh-18 fw-400">1,1988</div>
+                    </div>
+                    <div class="data-row">
+                        <div class="icon-data mx-7">
+                            <img src="img/arrow-green.svg" alt="">
+                        </div>
+                        <div class="money-data fz-14 fw-700 lh-18">
+                            USD/CAD
+                        </div>
+                        <div class="money-data-purchase fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-sale fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-last fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                    </div>
+                    <div class="data-row">
+                        <div class="icon-data mx-7">
+                            <img src="img/arrow-red.svg" alt="">
+                        </div>
+                        <div class="money-data fz-14 fw-700 lh-18">
+                            NZD/USD
+                        </div>
+                        <div class="money-data-purchase fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-sale fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                        <div class="money-data-last fz-14 lh-18 fw-400">
+                            1,1988
+                        </div>
+                    </div>
+                    <div class="data-row footer">
+                        <div class="see-more c-redSeeMore lh-16 fz-12 fw-400">
+                            <img src="img/see-more.svg" alt=""> VER MAIS
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
+  </body>
 </html>
