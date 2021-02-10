@@ -29,6 +29,9 @@
 .lh-4{
     line-height: 4px;
 }
+.lh-8{
+    line-height: 8px;
+}
 .lh-10{
     line-height: 10px;
 }
@@ -79,7 +82,9 @@
 }
 
 /* Font size */
-
+.fz-7{
+    font-size: 7px;
+}
 .fz-8{
     font-size: 8px;
 }
