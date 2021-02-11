@@ -6,9 +6,17 @@
 
 .container .container-app .navbar .navbar-top-container .weather-city{
     width: 100%;
-    height: 8px;
-    
+    height: 8px;   
+    display: flex;    
+    align-items: center;
+    text-align: center;
     font-family: Roboto;
+}
+
+.container .container-app .navbar .navbar-top-container .weather-city .change-city{
+    display: flex;
+    text-align: center;
+    padding-left: 3px;
 }
 
 .container .container-app .navbar .navbar-top-container .weather-header-container{
@@ -173,7 +181,6 @@
     width: 100%;
     height: 17px;
     display: flex;
-    border: 1px solid red;
 }
 
 .container .container-app .middle-content .element .col-2 .day-weather {
@@ -184,25 +191,27 @@
     align-items: center;
 }
 
-.container .container-app .middle-content .element .col-2 .weather-city{
+.container .container-app .middle-content .element .col-2 .weather-city {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    width: 100%;
 }
 
 .container .container-app .middle-content .element .col-3{
-    width: 57px;
+    width: 100%;
     height: 8px;
     display: flex;
     
 }
 
 
-.container .container-app .middle-content .element .col-3 .change-city{
+.container .container-app .middle-content .element .col-3 .change-city {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
-
 .container .container-app .container-app-bottom{
     padding:21px 0 53px 17px;
     font-family: Roboto;
@@ -215,6 +224,7 @@
 }
 
 .container .container-app .container-app-bottom .row-header .weather-city{
+    flex-direction: row;
     display: flex;
 }
 
@@ -338,5 +348,178 @@
 .container .container-app .app-data{
     background-color: #E5E5E5;
     width: 100%;
-    height: 200px;
+    height: fit-content;
+}
+
+.container .container-app .app-data .container-data-bottom {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;   
+}
+
+.container .container-app .app-data .container-data-bottom .title-weather {
+    height: 40px;
+    width: 100%;
+    padding: 0 75px 0 75px;
+    font-family: Roboto;   
+    text-align: center;
+}
+
+.container .container-app .app-data .container-data-bottom .allday-data-footer {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .container-app .app-data .container-data-bottom .allday-data-footer .time-day {
+    flex-direction: column;
+    width: 67px;
+    height: 100%;
+    display: flex;
+}
+
+.container .container-app .app-data .container-data-bottom .allday-data-footer .time-day .img-day {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .container-app .app-data .container-data-bottom .allday-data-footer .time-day .img-day img {
+    width: 26px;
+    height: 26px;
+}
+
+.container .container-app .app-data .container-data-bottom .allday-data-footer .time-day .period-day{
+    text-align: center;
+    font-family: Roboto;   
+}
+
+.container .container-app .app-data .container-data-bottom .wind{
+    display: flex;
+    width: 100%;
+    height: 16px;
+}
+
+.container .container-app .app-data .container-data-bottom .wind .title{
+    width: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .container-app .app-data .container-data-bottom .wind .divisor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .container-app .app-data .container-data-bottom .wind .data-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .container-app .app-data .container-data-bottom .wind .data-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .container-app .app-data .container-data-bottom .moisture{
+    display: flex;
+    width: 100%;
+    height: 16px;
+
+}
+
+.container .container-app .app-data .container-data-bottom  .moisture .title{
+    width: 64px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .container-app .app-data .container-data-bottom  .moisture .divisor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .container-app .app-data .container-data-bottom  .moisture .data-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .container-app .app-data .container-data-bottom  .moisture .data-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .container-app .app-data .container-data-bottom  .moisture .data-3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .container-app .app-data .container-data-bottom  .moisture .data-4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .container-app .app-data .container-data-bottom .sun{
+    display: flex;
+    width: 100%;
+    height: 16px;
+}
+
+.container .container-app .app-data .container-data-bottom .sun .title{
+    width: 34px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .container-app .app-data .container-data-bottom .sun .divisor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .container-app .app-data .container-data-bottom .sun .data-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .container-app .app-data .container-data-bottom .sun .data-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .container-app .app-data .container-data-bottom .sun .data-3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .container-app .app-data .container-data-bottom .see-more{
+    width: 100%;
+    height: 100%;
+    font-family: Roboto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-data-bottom.live-data{
+    padding: 0 42px 0 56px;
 }
