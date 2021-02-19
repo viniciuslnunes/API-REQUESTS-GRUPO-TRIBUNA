@@ -79,6 +79,7 @@
 .middle-content .element .top{
     display: flex;
     padding: 14px 0 0 18px;
+    border: none;
 }
 
 .middle-content .element .top .team-1.img{
@@ -195,7 +196,7 @@
 .game-live .game-statistics-container .game-statistics {
     width: 100%;
     height: fit-content;
-    padding-top: 50px;
+    padding: 50px 50px;
 }
 
 .game-live .game-statistics-container .game-statistics .statistics-live{

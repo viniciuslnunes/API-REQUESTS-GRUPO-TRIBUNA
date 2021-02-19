@@ -1,3 +1,9 @@
+.container-cotacao {
+    display: flex;
+    justify-content: center;
+}
+
+
 .navbar-top-container {
     display: flex;
     flex-direction: row;
@@ -21,7 +27,7 @@
     align-items: center;
 }
 
-.navbar-top-container .quotation-container .exchange .money{
+.navbar-top-container .quotation-container .exchange .money {
     width: 38px;
 }
 

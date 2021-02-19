@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/colors.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/margins.css" />
+    <link rel="stylesheet" href="../css/app-default.css" />
+    <link rel="stylesheet" href="../css/futebol.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Futebol APP MD</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-app">
+        <div class="navbar">
+          <div class="navbar-top-container">
+            <div class="top">
+              <div class="team-1 img mx-10">
+                <img src="../img/santos.svg" alt="Santos" />
+              </div>
+              <div class="score-team-1 lh-30 fz-44 c-greyTeams mx-17">3</div>
+              <div class="score-divisor mx-17">
+                <img src="../img/score-divisor.svg" alt="Divisor de placar" />
+              </div>
+              <div class="score-team-2 lh-30 fz-44 c-greyTeams mx-10">2</div>
+              <div class="team-2 img mx-20">
+                <img src="../img/gremio.svg" alt="Gremio" />
+              </div>
+              <div class="score-sidebar mx-10">
+                <img src="../img/score-sidebar.svg" alt="sidebar placar" />
+              </div>
+              <div class="see-more">
+                <a href="#">
+                  <div class="title fz-12 lh-16 c-greyContent fw-600">
+                    JOGO AO VIVO
+                  </div>
+                  <div class="subtitle fz-12 lh-16 c-greyContent fw-400">
+                    Veja mais informações
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="last-game">
+              <img src="../img/last-game.svg" alt="Jogo anterior" />
+            </div>
+            <div class="championship c-greyTeams lh-18 fz-15 fw-700">
+              Campeonato Brasileiro
+            </div>
+            <div class="real-time">
+              <img src="../img/green-button.svg" alt="status" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/futebol.js"></script>
+    <script>
+      fetchFutebol();
+    </script>
+  </body>
+</html>
