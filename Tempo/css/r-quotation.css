@@ -4,9 +4,11 @@
 }
 
 
-.navbar-top-container {
+.container-cotacao .container-app .navbar .navbar-top-container {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
 
 .quotation-container {
@@ -54,8 +56,13 @@
     display: flex;
 }
 
-.middle-content .element {
+.container-cotacao .container-app .middle-content .element {
+    display: flex;
+
     flex-direction: row;
+    width: 184px;
+    height: 79px;
+    background: linear-gradient(180deg, #F7F7F7 0%, #EDEDED 100%);
 }
 
 .middle-content .element .quotation-icon{
@@ -129,9 +136,10 @@
 
 .container-app .container-app-bottom .container-app-live {
     width: 100%;
-    height: 100%;
-    
-    /* padding-left: 12px; */
+    height: 250px;
+    overflow-y: auto;
+    padding-left: 12px;
+
 }
 
 .container-app .container-app-bottom .head-data {
@@ -154,13 +162,12 @@
 }
 
 .container-app .container-app-bottom .head-data .money-last{
-    width: 60px;
+    width: 35px;
 }
 
 .container-app .container-app-bottom .data-live {
     width: 100%;
-    height: 250px;
-    overflow-y: scroll;
+    height: 100%;
     font-family: Roboto;
 }
 
@@ -172,6 +179,8 @@
 
 .container-app .container-app-bottom .data-row .icon-data{
     width: 8px;
+    display: flex;
+    padding-bottom: 7px;
 }
 
 .container-app .container-app-bottom .data-row .money-data{
@@ -193,24 +202,42 @@
 
 .container-app .container-app-bottom .data-row.footer{
 justify-content: end;
+align-items: flex-end;
+background: none;
 }
 
 .container-app .container-app-bottom .data-row.footer .see-more{
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-    justify-content: end;
-    padding-right: 14px;
+    justify-content: center;
+    padding-right: 17px;
+    height: 100%;
+
 }
 
-::-webkit-scrollbar {
-    width: 12px;
-}
- 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
+    background-color: #F4F4F4;
 }
- 
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px #BC3636; 
+    background: #dad7d7;
 }
+/* FIX */
+
+.icon-money.mbx-4 {
+    display: flex;
+}
+
+@media screen  and (max-width: 690px){
+    .container-app .container-app-bottom .container-app-live {
+        width: 95%;
+        height: 100%;
+        padding-left: 12px;
+    }
+   .container-cotacao .container-app {
+        width: 360px !important;
+    }
+}
+
